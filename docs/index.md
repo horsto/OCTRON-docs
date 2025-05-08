@@ -74,7 +74,7 @@ Follow these steps:
     octron-gui
     ```
     ... and enjoy! 
-    On first start this will take a long time to load, since also the SAM2 models are all downloaded once. But subsequent startups will be much quicker. 
+    On first start this will take a long time to load, since all available models are downloaded once. But subsequent startups will be much quicker. 
 
 <br>
 
