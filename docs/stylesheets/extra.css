@@ -1,6 +1,6 @@
 :root {
-  --md-header-height: 3.5rem;
-  --md-header-logo-height: 3rem;
+  --md-header-height: 1.5rem;
+  --md-header-logo-height: 1rem;
 }
 
 .md-header__button.md-logo {
@@ -10,7 +10,7 @@
   
   .md-header__button.md-logo img,
   .md-header__button.md-logo svg {
-    height: 2rem; 
+    height: 1rem; 
     width: auto;
   }
   
