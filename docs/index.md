@@ -41,39 +41,39 @@ Follow these steps:
 3. Clone this repository and in a terminal (CMD on Windows) browse to the folder that you cloned it to (`cd "YOUR/CLONED/FOLDER"`)
 
 4. Create a new Conda environment called "octron" with Python version 3.11:
-    ```sh
+    ```
     conda env create -f environment.yaml
     ```
 
 !!! important "CUDA Users"
     **If you have a CUDA compatible graphics card in your computer, do *instead***:
 
-    ```sh
+    ```
     conda env create -f environment_cuda.yaml
     ```
 
     This will install the right PyTorch version automatically on Windows systems.
 
 5. Activate the new environment:
-    ```sh
+    ```
     conda activate octron
     ```
 6. Check the accessibility of GPU resources on your computer:
-    ```sh
+    ```
     python test_gpu.py
     ```
     This should show your graphics card, if it is correctly installed and accessible by pytorch. If this fails, you should correct this first, since OCTRON will not engage your GPU otherwise (and that is much slower).
 
 ## Usage
 1. Activate the new environment:
-    ```sh
+    ```
     conda activate octron
     ```
-2. ```sh
+2. ```
     octron-gui
     ```
     ... and enjoy! 
-    On first start this will literally take forever to load, since also the SAM2 models are all downloaded once. But subsequent startups will be much quicker. 
+    On first start this will take a long time to load, since also the SAM2 models are all downloaded once. But subsequent startups will be much quicker. 
 
 <br>
 
