@@ -1,0 +1,18 @@
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0 .8rem;
+  }
+  
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    height: 5rem; 
+    width: auto;
+  }
+  
+  .md-header__title {
+    color: transparent;
+  }
+  
+  .md-header__inner {
+    height: 6.5rem;
+  }
