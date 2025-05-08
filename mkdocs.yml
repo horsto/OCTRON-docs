@@ -8,7 +8,7 @@ repo_name: horsto/OCTRON-GUI
 repo_url: https://github.com/horsto/OCTRON-GUI
 
 # Copyright
-copyright: Copyright &copy; 2025- Horst Obenhaus
+copyright: Copyright &copy; 2025-2030 Horst Obenhaus
 
 # Configuration
 theme:
@@ -33,24 +33,20 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # Light mode (default)
+    - scheme: default
       primary: deep purple
       accent: purple
       toggle:
-        icon: material/toggle-switch
+        icon: material/toggle-switch 
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    # Dark mode
+    - scheme: slate
       primary: black
       accent: purple
       toggle:
-        icon: material/toggle-switch-off
-        name: Switch to system preference
+        icon: material/toggle-switch-off 
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
