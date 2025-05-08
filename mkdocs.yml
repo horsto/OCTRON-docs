@@ -1,32 +1,84 @@
-site_name: OCTRON docs
-site_url: https://horsto.github.io/OCTRON-docs
+site_name: OCTRON
+site_url: https://horston.github.io/OCTRON-docs
+site_author: Horst Obenhaus
+site_description: >-
+  Documentation for the OCTRON project
+# Repository
+repo_name: horsto/OCTRON-GUI
+repo_url: https://github.com/horsto/OCTRON-GUI
+
+# Copyright
+copyright: Copyright &copy; 2025- Horst Obenhaus
+
+# Configuration
 theme:
   name: material
-  logo: assets/octron_logo.svg
+  logo: assets/header_logo.svg
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - header.autohide
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    - scheme: slate
-      primary: black
-      accent: teal
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
-    - scheme: default
-      primary: black
-      accent: teal
-      toggle:
-        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-  features:
-    - search.suggest
-plugins:
-  - search
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
 
 extra_css:
   - stylesheets/extra.css
 
-markdown_extensions:
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
-  # Python Markdown
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/horsto/OCTRON-GUI
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/octoscience.bsky.social
+
+
+# Extensions
+markdown_extensions:
   - abbr
   - admonition
   - attr_list
@@ -35,9 +87,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-      toc_depth: 3
-
-  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -45,16 +94,35 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
