@@ -44,10 +44,15 @@ Follow these steps:
     ```sh
     conda env create -f environment.yaml
     ```
-> [!IMPORTANT]  
-> **If you have a CUDA compatible graphics card in your computer, do *instead***:<br>
->    `conda env create -f environment_cuda.yaml`
-> <br>This will install the right pytorch version automatically on windows systems.
+
+!!! important "CUDA Users"
+    **If you have a CUDA compatible graphics card in your computer, do *instead***:
+
+    ```sh
+    conda env create -f environment_cuda.yaml
+    ```
+
+    This will install the right PyTorch version automatically on Windows systems.
 
 5. Activate the new environment:
     ```sh
@@ -71,8 +76,7 @@ Follow these steps:
     On first start this will literally take forever to load, since also the SAM2 models are all downloaded once. But subsequent startups will be much quicker. 
 
 <br>
-<br>
-<br>
+
 
 
 !!! info "Attributions"
