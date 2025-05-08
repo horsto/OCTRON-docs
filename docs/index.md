@@ -30,14 +30,10 @@ Octron is built on [napari](https://www.napari.org), [segment anything](https://
 Follow these steps: 
 
 1. Make sure **ffmpeg** is installed on the system. Some packages rely on it.<br>
-    - ```sh
-      ffmpeg -version
-      ```
+    - `ffmpeg -version`
     - If the command fails for some reason, make sure you install ffmpeg first:
         - [step by step guide for windows](ffmpeg_windows.md)
-        - on MacOS you can use [homebrew](https://formulae.brew.sh/formula/ffmpeg) and ```sh
-          brew install ffmpeg
-          ```
+        - on MacOS you can use [homebrew](https://formulae.brew.sh/formula/ffmpeg) and `brew install ffmpeg`
         - Linux users: You know what to do (:
 
 2. Download miniconda. Open your web browser and go to the official Miniconda download page: [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Download and execute the installer for your operating system (Windows, macOS, or Linux). Then restart your terminal.
