@@ -1,5 +1,5 @@
 ![OCTRON Logo](assets/octron_logo.svg)
-####
+
 OCTRON is a [napari](https://www.napari.org) plugin that enables segmentation and tracking of animals in behavioral setups. It helps you to create rich annotation data that can be used to train your own machine learning segmentation models. This enables dense quantification of animal behavior across a wide range of species and video recording conditions. 
 
 Octron is built on [napari](https://www.napari.org), [segment anything](https://segment-anything.com/), [yolo](https://www.ultralytics.com/) and 💜.
