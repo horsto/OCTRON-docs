@@ -30,10 +30,14 @@ Octron is built on [napari](https://www.napari.org), [segment anything](https://
 Follow these steps: 
 
 1. Make sure **ffmpeg** is installed on the system. Some packages rely on it.<br>
-    - `ffmpeg -version` 
+    - ```sh
+      ffmpeg -version
+      ```
     - If the command fails for some reason, make sure you install ffmpeg first:
         - [step by step guide for windows](ffmpeg_windows.md)
-        - on MacOS you can use [homebrew](https://formulae.brew.sh/formula/ffmpeg) and `brew install ffmpeg`
+        - on MacOS you can use [homebrew](https://formulae.brew.sh/formula/ffmpeg) and ```sh
+          brew install ffmpeg
+          ```
         - Linux users: You know what to do (:
 
 2. Download miniconda. Open your web browser and go to the official Miniconda download page: [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Download and execute the installer for your operating system (Windows, macOS, or Linux). Then restart your terminal.
@@ -41,35 +45,36 @@ Follow these steps:
 3. Clone this repository and in a terminal (CMD on Windows) browse to the folder that you cloned it to (`cd "YOUR/CLONED/FOLDER"`)
 
 4. Create a new Conda environment called "octron" with Python version 3.11:
-    ```
+    ```sh
     conda env create -f environment.yaml
     ```
 
 !!! important "CUDA Users"
     **If you have a CUDA compatible graphics card in your computer, do *instead***:
 
-    ```
+    ```sh
     conda env create -f environment_cuda.yaml
     ```
 
     This will install the right PyTorch version automatically on Windows systems.
 
 5. Activate the new environment:
-    ```
+    ```sh
     conda activate octron
     ```
 6. Check the accessibility of GPU resources on your computer:
-    ```
+    ```sh
     python test_gpu.py
     ```
     This should show your graphics card, if it is correctly installed and accessible by pytorch. If this fails, you should correct this first, since OCTRON will not engage your GPU otherwise (and that is much slower).
 
 ## Usage
 1. Activate the new environment:
-    ```
+    ```sh
     conda activate octron
     ```
-2. ```
+2. Start the GUI:
+    ```sh
     octron-gui
     ```
     ... and enjoy! 
