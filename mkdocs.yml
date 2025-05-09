@@ -52,6 +52,7 @@ theme:
     code: Roboto Mono
   icon:
     logo: logo
+  favicon: assets/header_logo.svg
 
 extra_css:
   - stylesheets/extra.css
