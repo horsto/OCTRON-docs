@@ -10,6 +10,18 @@ repo_url: https://github.com/horsto/OCTRON-GUI
 # Copyright
 copyright: Copyright &copy; 2025-2030 Horst Obenhaus
 
+# Navigation
+nav:
+  - index.md
+  - installation.md
+  - How to use:
+    - gui.md
+    - create-project.md
+    - annotating.md
+    - training.md
+    - analysing.md
+  - troubleshooting.md
+
 # Configuration
 theme:
   name: material
@@ -20,6 +32,7 @@ theme:
     - content.code.copy
     - content.tooltips
     - header.autohide
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
     - navigation.sections

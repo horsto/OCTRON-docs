@@ -1,5 +1,6 @@
-# Usage
+# Using the GUI
 
+## Opening the GUI
 1. Activate the new environment:
     ```sh
     conda activate octron
@@ -11,4 +12,5 @@
     ... and enjoy! 
     On first start this will take a long time to load, since all available models are downloaded once. But subsequent startups will be much quicker. 
 
-<br>
+## The GUI explained
+Show annotated image of GUI

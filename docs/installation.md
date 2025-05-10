@@ -15,7 +15,7 @@
 
     Then you have to start with the conda *.yml* again (see steps explained below).
 
-Follow these steps: 
+Follow these steps to install OCTRON: 
 
 1. Make sure **ffmpeg** is installed on the system. Some packages rely on it.<br>
     - `ffmpeg -version`
@@ -37,14 +37,14 @@ Follow these steps:
     conda env create -f environment.yaml
     ```
 
-!!! important "CUDA Users"
-    **If you have a CUDA compatible graphics card in your computer, do *instead***:
+    !!! important "CUDA Users"
+        **If you have a CUDA compatible graphics card in your computer, do *instead***:
 
-    ```sh
-    conda env create -f environment_cuda.yaml
-    ```
+        ```sh
+        conda env create -f environment_cuda.yaml
+        ```
 
-    This will install the right PyTorch version automatically on Windows systems.
+        This will install the right PyTorch version automatically on Windows systems.
 
 5. Activate the new environment:
     ```sh

@@ -10,7 +10,7 @@ Octron is built on [napari](https://www.napari.org), [segment anything](https://
   Your browser does not support the video tag.
 </video>
 
-[Installation](installation.md){ .md-button .md-button--primary } [Usage](usage.md){ .md-button .md-button--primary }
+[Installation](installation.md){ .md-button .md-button--primary } [How to use](gui.md){ .md-button .md-button--primary }
 
 <br>
 
