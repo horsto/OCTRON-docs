@@ -4,7 +4,7 @@ Start by organising your project:
 1. Decide which videos to use and make sure they are .mp4<br>
 
     ??? note "Transcoding video files to .mp4"
-        <video width="100%"  loop muted>
+        <video width="100%"  muted controls>
            <source src="../assets/videos/tutorial/2__add_video_to_project-fast.mp4" type="video/mp4">
            Your browser does not support the video tag.
         </video>
@@ -17,7 +17,7 @@ Start by organising your project:
 
 4. In the **Project** tab, click *Choose* under *Project folder* and navigate to the folder you created in step 1
 
-    <video width="100%"  loop muted>
+    <video width="100%"  muted controls>
       <source src="../assets/videos/tutorial/1__startup_folder_select-fast.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -25,7 +25,7 @@ Start by organising your project:
 ## Add new video file
 
 
-<video width="100%"  loop muted>
+<video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/2__add_video_to_project-fast.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>

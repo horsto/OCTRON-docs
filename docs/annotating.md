@@ -28,20 +28,20 @@ IMAGE: annotated overview of this section
 Click *Create* <br>
 **Reset:** details
 
-<video width="100%"  loop muted>
+<video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/3__load_model_add _annotationlayers-fast.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 Start annotating
 
-<video width="100%"  loop muted>
+<video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/4__oneclickannotations-fast.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 Switch annotation type
-<video width="100%"  loop muted>
+<video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/5__changing_annotationlayermode-fast.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -55,7 +55,7 @@ Switch annotation type
 Click ▶️ to predict the next frame <br>
 Click *15 frame* to predict 15 frames in a row (this will also skip the number of frames specified under *Skip* between each predicted frame)
 
-<video width="100%"  loop muted>
+<video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/6_batchpredict-fast.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
