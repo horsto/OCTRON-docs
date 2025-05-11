@@ -17,10 +17,10 @@ Start by organising your project:
 
 4. In the **Project** tab, click *Choose* under *Project folder* and navigate to the folder you created in step 1
 
-    <video width="100%"  muted controls>
-      <source src="../assets/videos/tutorial/1__startup_folder_select-fast.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<video width="100%"  muted controls>
+  <source src="../assets/videos/tutorial/1__startup_folder_select-fast.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Add new video file
 
