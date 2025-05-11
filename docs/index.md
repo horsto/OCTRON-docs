@@ -11,8 +11,13 @@ Octron is built on [napari](https://www.napari.org), [segment anything](https://
 </video>
 
 [Installation](installation.md){ .md-button .md-button--primary } [How to use](gui.md){ .md-button .md-button--primary }
-
 <br>
+
+!!! quote "How to cite"
+    Using OCTRON for your project? Please cite this paper to share the word! 
+    <br>
+    👉*Add paper details*
+
 
 !!! info "Attributions"
     - Interface button and icon images were created by user [Arkinasi](https://thenounproject.com/browse/collection-icon/marketing-agency-239829/) from Noun Project (CC BY 3.0)
