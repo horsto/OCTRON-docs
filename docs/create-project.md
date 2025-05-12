@@ -5,7 +5,7 @@ Start by organising your project:
 
     ??? note "Transcoding video files to .mp4"
         <video width="100%"  muted controls>
-           <source src="../assets/videos/tutorial/2__add_video_to_project-fast.mp4" type="video/mp4">
+           <source src="../assets/videos/tutorial/octron_tools_transcoding_movies_to_mp4-fast.mp4" type="video/mp4">
            Your browser does not support the video tag.
         </video>
 
