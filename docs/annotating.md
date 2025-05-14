@@ -13,7 +13,7 @@ Select the model you would like to use for your annotations and click *Load mode
     **SAM2 Large:** details
 
 
-## Layer controls
+## Create labels
 This is where you create the labels for the animals/item/structure you want to track. 
 
 1. In the *Type...* drop-down menu, select the type of annotation you would like to use to label your structure. There are two types:
@@ -27,8 +27,9 @@ This is where you create the labels for the animals/item/structure you want to t
 
     - **Suffix:** add a number here if you want to label multiple instances of the same thing (e.g. you have two LEDs and want to label them separately as *LED 1* and *LED 2*)
 
-3. Click the *Create* button to create your label. Two new layers will appear in the left hand section of OCTRON (more on that later)
-4. Repeat steps 1-3 until you have all the labels you want
+3. Click the *Create* button to create your label. Two new layers will appear in the left hand section of OCTRON (more on that later).
+
+4. Repeat steps 1-3 until you have all the labels you want.
 
 ??? note "Removing unwanted labels"
     If you want to remove one of the labels you've created, then click *Remove* in the *Label...* drop-down menu and select the label you would like to remove
@@ -41,18 +42,34 @@ If at some point the model that is helping you annotate the videos is starting t
 </video>
 
 ### Start annotating
-1. 
+In the bottom left section of OCTRON you have a *layer list* of all your layers. When you click on a layer you'll get access to its *layer controls* in the panel directly above.
 
-<video width="100%"  muted controls>
-  <source src="../assets/videos/tutorial/4__oneclickannotations-fast.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Each label that you created has two layers: one labelled by the layer type you selected (*points* or *shapes*) and one called *mask*. The points/shapes layer is the one you use to make annotations, while the mask layer is where you see the result of your annotations (i.e. what OCTRON has identified as an object based on your annotations). 
 
-Switch annotation type
-<video width="100%"  muted controls>
-  <source src="../assets/videos/tutorial/5__changing_annotationlayermode-fast.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+All layers can be toggled visible/invisible by clicking the 👁️ symbol on that layer.
+
+1. Click the video layer and make any adjustments necessary (e.g. adjusting contrast).
+
+2. Click on a points layer and make sure the ➕ symbol is selected in the layer controls panel. Use your mouse to left-click on the object you want to track - you should see a translucent mask appear covering that object. Right-click on anything that should not be included in that mask. The more clicks you make of both kinds, the more refined the mask becomes. The clicks do not have to be very precise.
+
+    ??? note "How to remove unwanted points"
+        If you make a mistake and would like to remove a point, click the ✖️ symbol in the layer controls and left-click on the point you would like to remove to delete it
+
+3. Click on a shapes layer and select the type of shape you want to use in the layer controls, e.g. a square. Left-click and drag the shape around the object you want to label - OCTRON will automatically try to identify the structure you want to label within that square. 
+
+    <video width="100%"  muted controls>
+      <source src="../assets/videos/tutorial/4__oneclickannotations-fast.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+5. You can refine a shapes layer by using the tools shown in that layer's layer controls (e.g. remove or add points on the shape outline or move them). 
+
+4. If you want to switch the annotation type (e.g. from *points* to *shapes*), delete the mask layer associated with that annotation type by selecting it and clicking the 🗑️ symbol (both the mask and points layers will be removed), then add the layer again (step 1 under [Create labels](#create-labels))
+
+    <video width="100%"  muted controls>
+      <source src="../assets/videos/tutorial/5__changing_annotationlayermode-fast.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
 ## Parameters
 **Opening kernel radius:** details
