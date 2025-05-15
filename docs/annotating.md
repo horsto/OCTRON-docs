@@ -48,7 +48,9 @@ Each label that you created has two layers: one labelled by the layer type you s
 
 All layers can be toggled visible/invisible by clicking the 👁️ symbol on that layer.
 
-1. Click the video layer and make any adjustments necessary (e.g. adjusting contrast).
+1. Decide which frame to annotate first (e.g. the first frame where all the items you want to label are visible)
+
+1. Click the video layer and make any adjustments necessary (e.g. adjust contrast).
 
 2. Click on a points layer and make sure the ➕ symbol is selected in the layer controls panel. Use your mouse to left-click on the object you want to track - you should see a translucent mask appear covering that object. Right-click on anything that should not be included in that mask. The more clicks you make of both kinds, the more refined the mask becomes. The clicks do not have to be very precise.
 
@@ -62,23 +64,43 @@ All layers can be toggled visible/invisible by clicking the 👁️ symbol on th
       Your browser does not support the video tag.
     </video>
 
-5. You can refine a shapes layer by using the tools shown in that layer's layer controls (e.g. remove or add points on the shape outline or move them). 
+4. You can refine a shapes layer by using the tools shown in that layer's layer controls (e.g. remove/add/adjust points on the shape outline). 
 
-4. If you want to switch the annotation type (e.g. from *points* to *shapes*), delete the mask layer associated with that annotation type by selecting it and clicking the 🗑️ symbol (both the mask and points layers will be removed), then add the layer again (step 1 under [Create labels](#create-labels))
+5. If you want to switch the annotation type (e.g. from *points* to *shapes*), delete the mask layer associated with that annotation type by selecting it and clicking the 🗑️ symbol (both the mask and points layers will be removed), then add the layer again (step 1 under [Create labels](#create-labels))
 
     <video width="100%"  muted controls>
       <source src="../assets/videos/tutorial/5__changing_annotationlayermode-fast.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
-## Parameters
-**Opening kernel radius:** details
+6. Once you have annotated all the object you want to track in a single frame, you can get help from OCTRON to annotate the remaining frames (see [Batch prediction](#batch-prediction))
+
 
 ## Batch prediction
-**Skip:** the number of frames you want to skip before the labels are predicted on a frame
+1. Click ▶️ to predict the next frame. The model you selected under *Model selection* will now create masks in the following frame, on what it thinks are the same objects as those you've annotated. 
 
-Click ▶️ to predict the next frame <br>
-Click *15 frame* to predict 15 frames in a row (this will also skip the number of frames specified under *Skip* between each predicted frame)
+    ??? note "What to do if the predicted masks look bad"
+        If this happens then you need to refine the predicted mask. 
+
+          - If you used the *points* label, then you just need to add a few more left- and right-clicks on the new frame to helpt the model recognise the object 
+          - If you used the the *shapes* label it's often easiest to redraw the shape in the new frame 
+
+2. If you're happy with the prediction, continue clicking ▶️ to see if the predictions continue to look good for the following frames, adjusting the masks if necessary
+3. Once the predictions seem to be reliably good, click the *15 frames* button to predict 15 frames in a row. Once the predictions are finished, you can go back and adjust the masks if necessary; either individually if there's only one or two frames that are off, or just the first frame where the predictions went wrong and then try predicting 15 frames again from there (the new predictions will overwrite the old ones)
+4. When predicting 15 frames in a row works well, then you can start to skip frames to speed up the process, especially if there is very little happening from frame to frame:
+    **Skip:** the number of frames you want to skip before predictions should be made again (this will apply both if you click ▶️ and if you click *15 frames*)
+5. Continue to predict frames until you reach the end of the video or a decent number of frames have been annotated
+
+    ??? question "How do I know how many frames have been annotated?"
+        Open the *Manage project* tab and look for the video you're currently annotating in the *Existing data* list. The last few characters of the folder and file names are visible in the first two columns, followed by the number of labels in each video, and the total number of frames that have been annotated.
+        
+        ![a screenshot of the 'Manage project' tab](assets/screenshots/start_screen_loaded_crop.png)
+
+    ??? question "How many frames should I annotate?"
+        This depends on xyz
+
+    ??? note "If the predictions become much slower than they were in the beginning"
+         This sometimes happens when the model is basing its predictions on a large number of annotated frames. Click the **Reset** button under *Label manager* to make it forget what it's learned so far and then create annotations for all your labels in a single frame before you start predicting again.
 
 <video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/6_batchpredict-fast.mp4" type="video/mp4">
