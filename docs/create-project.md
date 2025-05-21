@@ -22,9 +22,13 @@ Start by organising your project:
            Your browser does not support the video tag.
         </video>
 
-2. Create a folder that contains two subfolders
-    - **train:** save the videos that you want to train the model on in this folder. The number of videos you'll need for training depends on what you want to track, the quality of the data, recording duration, etc. Recommendation: start with a handful of videos and add more later if the training results are not good enough.
-    - **test:** save the videos that you want to test the model on here (i.e. videos that the model has *not* been trained on). These should be new videos, but similar to the training videos in terms of image characteristics.
+2. Create a folder for your project
+    
+    ??? tip "Project folder tip"
+        Within your project folder, create two subfolders:
+
+        - **train:** save the videos that you want to train the model on in this folder. The number of videos you'll need for training depends on what you want to track, the quality of the data, recording duration, etc. Recommendation: start with a handful of videos and add more later if the training results are not good enough.
+        - **test:** save the videos that you want to test the model on here (i.e. videos that the model has *not* been trained on). These should be new videos, but similar to the training videos in terms of image characteristics.
 
 3. [Start the OCTRON Gui](gui.md)
 

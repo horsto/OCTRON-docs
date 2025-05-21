@@ -86,9 +86,14 @@ All layers can be toggled visible/invisible by clicking the 👁️ symbol on th
           - If you used the the *shapes* label it's often easiest to redraw the shape in the new frame 
 
 2. If you're happy with the prediction, continue clicking ▶️ to see if the predictions continue to look good for the following frames, adjusting the masks if necessary
+
 3. Once the predictions seem to be reliably good, click the *15 frames* button to predict 15 frames in a row. Once the predictions are finished, you can go back and adjust the masks if necessary; either individually if there's only one or two frames that are off, or just the first frame where the predictions went wrong and then try predicting 15 frames again from there (the new predictions will overwrite the old ones)
-4. When predicting 15 frames in a row works well, then you can start to skip frames to speed up the process, especially if there is very little happening from frame to frame:
-    **Skip:** the number of frames you want to skip before predictions should be made again (this will apply both if you click ▶️ and if you click *15 frames*)
+
+4. When predicting 15 frames in a row works well, then you can start to skip frames to speed up the process, especially if there is very little happening from frame to frame. If at some point you need to return to a previously annotated frame that was several frames away, you can use the timeline control to quickly move between them.
+
+    - **Skip:** the number of frames you want to skip before predictions should be made again (this will apply both if you click ▶️ and if you click *15 frames*)
+    - **Timeline control:** click *Jump to previous* or *Jump to next* to move to the closest preceding/upcoming annotated frame
+
 5. Continue to predict frames until you reach the end of the video or a decent number of frames have been annotated
 
     ??? question "How do I know how many frames have been annotated?"
