@@ -1,6 +1,6 @@
 # Installation
 
-!!! note "Important Update Information"
+!!! info "Important Update Information"
     Just a heads up that there will be changes accumulating in the repo over these days. 
     So the first thing that you should do before playing with OCTRON (after you installed it successfully once, see below), should be:
 
@@ -15,11 +15,12 @@
 
     Then you have to start with the conda *.yml* again (see steps explained below).
 
-Follow these steps to install OCTRON: 
+### Follow these steps to install OCTRON: 
 
 1. Make sure **ffmpeg** is installed on the system. Some packages rely on it.<br>
-    - `ffmpeg -version`
-    - If the command fails for some reason, make sure you install ffmpeg first
+    - `ffmpeg -version`<br>
+        *If the command fails for some reason, make sure you install ffmpeg first*
+
     ??? note "Installing ffmpeg"
         === "Windows"
             ### Step 1: Download FFmpeg
@@ -61,9 +62,12 @@ Follow these steps to install OCTRON:
         === "Linux"
             You know what to do (:
 
-2. Download miniconda. Open your web browser and go to the official Miniconda download page: [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). Download and execute the installer for your operating system (Windows, macOS, or Linux). Then restart your terminal.
+2. Download miniconda. <br>
+    - Open your web browser and go to the official Miniconda download page: [Miniconda Download](https://docs.conda.io/en/latest/miniconda.html). 
+    - Download and execute the installer for your operating system (Windows, macOS, or Linux). 
+    - Restart your terminal.
 
-3. Clone this repository and in a terminal (CMD on Windows) browse to the folder that you cloned it to (`cd "YOUR/CLONED/FOLDER"`)
+3. Clone the [OCTRON-GUI repository](https://github.com/horsto/OCTRON-GUI) and in a terminal (CMD on Windows) browse to the folder that you cloned it to (`cd "YOUR/CLONED/FOLDER"`)
 
 4. Create a new Conda environment called "octron" with Python version 3.11:
     ```sh
@@ -87,4 +91,4 @@ Follow these steps to install OCTRON:
     ```sh
     python test_gpu.py
     ```
-    This should show your graphics card, if it is correctly installed and accessible by pytorch. If this fails, you should correct this first, since OCTRON will not engage your GPU otherwise (and that is much slower).
+    This should show your graphics card, if it is correctly installed and accessible by PyTorch. If this fails, you should correct this first, since OCTRON will not engage your GPU otherwise (and thus be much slower).

@@ -1,16 +1,18 @@
 # Generate annotation data
 To train your model you first need to show it what it should be tracking, i.e. you need to annotate the videos you want the model to train on. This is done in the **Generate annotation data** tab.
 
-IMAGE: annotated overview of this section
+<img src="../assets/annotated_images/annotation.png"/>
 
 ## Model selection
 Select the model you would like to use for your annotations and click *Load model*
 
 ??? question "Which model should I choose?"
+    Rule of thumb: the larger the model, the more resources (GPU) it demands.<br>
     **SAM2 Base Plus:** details <br>
     **SAM2 Tiny:** details <br>
     **SAM2 Small:** details <br>
-    **SAM2 Large:** details
+    **SAM2 Large:** details <br>
+    **SAM2 Large HQ:** details
 
 
 ## Create labels
@@ -34,7 +36,7 @@ This is where you create the labels for the animals/item/structure you want to t
 ??? note "Removing unwanted labels"
     If you want to remove one of the labels you've created, then click *Remove* in the *Label...* drop-down menu and select the label you would like to remove
 
-If at some point the model that is helping you annotate the videos is starting to slow down, you can click the **Reset** button to make it forget what it's learned so far and start fresh (more on that later).
+If at some point the model that is helping you annotate the videos is starting to slow down, you can click the **Reset** button to make it forget what it's learned so far and start fresh.
 
 <video width="100%"  muted controls>
   <source src="../assets/videos/tutorial/3__load_model_add _annotationlayers-fast.mp4" type="video/mp4">
@@ -97,7 +99,7 @@ All layers can be toggled visible/invisible by clicking the 👁️ symbol on th
 5. Continue to predict frames until you reach the end of the video or a decent number of frames have been annotated
 
     ??? question "How do I know how many frames have been annotated?"
-        Open the *Manage project* tab and look for the video you're currently annotating in the *Existing data* list. The last few characters of the folder and file names are visible in the first two columns, followed by the number of labels in each video, and the total number of frames that have been annotated.
+        Open the *Manage project* tab and look for the video you're currently annotating in the *Existing data* list. The last few characters of the folder and file name are visible in the first two columns, followed by the number of labels in each video, and the total number of frames that have been annotated.
         
         ![a screenshot of the 'Manage project' tab](assets/screenshots/start_screen_loaded_crop.png)
 

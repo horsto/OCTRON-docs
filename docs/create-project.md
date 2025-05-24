@@ -1,5 +1,5 @@
 # Create a project
-Start by organising your project:
+## Start by organising your project
 
 1. Decide which videos to use and make sure they are .mp4<br>
 
@@ -48,4 +48,6 @@ Drag one of the videos you want to train the model on into the *Add new video fi
 </video>
 
 ## Existing data
-Once you start annotating, this section will list the number of frames that you have annotated in each video. 
+Once you start annotating, this section will list the number of frames that you have annotated in each video as well as the number of labels. 
+
+<img src="../assets/screenshots/start_screen_loaded_crop.png" width="300"/>

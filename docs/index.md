@@ -51,3 +51,20 @@ Octron is built on [napari](https://www.napari.org), [segment anything](https://
         year={2023}
     }  
     ```
+     - OCTRON multi-object tracking is achieved via ByteTrack and BoT-SORT:
+    ```{bibtex}
+    @article{zhang2022bytetrack,
+      title={ByteTrack: Multi-Object Tracking by Associating Every Detection Box},
+      author={Zhang, Yifu and Sun, Peize and Jiang, Yi and Yu, Dongdong and Weng, Fucheng and Yuan, Zehuan and Luo, Ping and Liu, Wenyu and Wang, Xinggang},
+      booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+      year={2022}
+    }
+    ```
+    ```{bibtex}
+    @article{aharon2022bot,
+      title={BoT-SORT: Robust Associations Multi-Pedestrian Tracking},
+      author={Aharon, Nir and Orfaig, Roy and Bobrovsky, Ben-Zion},
+      journal={arXiv preprint arXiv:2206.14651},
+      year={2022}
+    }
+    ```

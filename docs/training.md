@@ -1,7 +1,7 @@
 # Train model
 Once you have a decent number of annotated frames, you are ready to train your model. This is done in the **Train model** tab.
 
-IMAGE: annotated overview of this section
+<img src="../assets/annotated_images/training.png"/>
 
 ## Generate training data
 OCTRON needs to generate data to train the model on, i.e. it takes you annotations and splits them into a training dataset and a testing dataset. This enables it to evaluate how well the training is going by comparing its predictions against the ground truth. First, consider these options:
