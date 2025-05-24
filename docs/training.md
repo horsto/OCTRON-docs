@@ -34,8 +34,10 @@ Once the training data has been generated, OCTRON is ready to train your model. 
 
 - **Save period:** decide how often (in number of ephocs) to save the training results
 
-- **Resume:** details <br>
-- **Overwrite:** details <br>
-- **Tensorboard:** details
+- **Resume:** if you've previously started training a model but had to abort for some reason, you can continue from where the training stopped by selecting this option [this feature has not been implemented yet]
+- **Overwrite:** if you've previously trained a model and want to replace it, select this option
+- **Tensorboard:** select this if you want to follow the training progress live in your browser. Once you click *Train*, a new browser tab should open automatically, but if it does not you can copy the link that will appear in your terminal window and open it manually
 
 Click *Train*
+
+While the model is training you can track its progress in the terminal window (and with graphs in your browser if you selected the *Tensorboard* option). Once OCTRON has finished one epoch, it will provide an estimate of how long the total training will take, based on how long the first epoch took to complete and how many epochs you've told it to train for. 
